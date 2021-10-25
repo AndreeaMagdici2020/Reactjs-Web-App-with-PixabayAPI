@@ -1,0 +1,70 @@
+.headerApp{
+    display: flex;
+    flex-direction: row;
+  align-content: flex-end;
+  margin-bottom: 20px;
+   
+}
+.logoSpace{
+    max-height: 60px;
+    width: 80%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.userControls{
+    height: 60px;
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    justify-content: right;
+    align-items: center;
+}
+
+.logo{
+    height: 50px;
+    width: 50px;
+    overflow: hidden;
+   margin:5px;
+}
+
+.like{
+    width: 35px;
+    height:35px;
+    margin:10px;
+}
+
+.user{
+    width: 35px;
+    height:35px;
+    margin:10px;
+}
+
+.select{
+    width: 50%;
+    height:30px;
+    align-content: center;
+    background-color: transparent;
+    border-style: none;
+    margin:10px;
+
+}
+
+p:first-child{
+    color:navy;
+
+ 
+}
+.appHeader{
+    color:rgb(26, 26, 141);
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bolder;
+    vertical-align: middle;
+}
+

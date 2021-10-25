@@ -1,0 +1,38 @@
+.container{
+    position:static;
+    margin:0px;
+}
+* {box-sizing:border-box}
+.slide{
+    margin-bottom: 60px;
+}
+.previous,.next{
+
+background-color: grey;
+border:none;
+cursor: pointer;
+
+width: 40px;
+height: 70px;
+border-radius: 5px;
+
+
+}
+
+.next{
+    right: 0;
+}
+
+
+
+.dot{
+    margin:5px;
+    cursor: pointer;
+    height: 16px;
+    width: 16px;
+    background-color:rgb(10, 10, 133);
+    border-radius: 50%;
+    opacity: 0.5;
+
+  
+}

@@ -1,0 +1,44 @@
+
+.container{
+  
+    width: 100%;
+}
+
+.searchZone{
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    position: relative;
+    
+}
+
+
+
+.searchInput{
+    width:60%;
+    height:40px;
+    border-style:solid;
+    border-width:1px;
+    border-color:navy;
+    margin-left: 160px;
+}
+
+.searchBtn{
+    height: 40px;
+    border-style: solid;
+    border-width:1px;
+    width: 50px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    background-color: rgb(248, 64, 18);
+    overflow: hidden;
+
+}
+.magnifier{
+    width: 50%;
+    height: 50%;
+    overflow: hidden;
+    
+}
+

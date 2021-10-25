@@ -1,0 +1,24 @@
+.gridContainer{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: white;
+  padding: 20px;
+
+ z-index: 1;
+}
+
+.gridItem {
+    background-color:white;
+    border: 1px solid rgb(194, 176, 211);
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+    /* height: 250px;
+    margin:10px; */
+    height: 95%;
+    width: 95%;
+   
+    border-radius: 5px;
+    -webkit-box-shadow: 12px 15px 50px -9px rgba(0,0,0,0.54); 
+box-shadow: 12px 15px 50px -9px rgba(0,0,0,0.54);
+}
