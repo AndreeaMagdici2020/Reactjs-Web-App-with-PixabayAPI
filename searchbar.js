@@ -1,10 +1,10 @@
 /* eslint-disable no-restricted-globals */
 import React from "react";
-import DisplayScreen from "./display";
 import search from "./pics/search.png";
 import styles from "./searchBarStyle.module.css";
 import DropdownMenu from "./DropdownMenu.js";
 import Carousel from "./../Carousel.js";
+import Pagination from "../Pagination";
 
 
 
@@ -45,7 +45,7 @@ handleCathegoryChange(event){
     
 
     getUrl() {
-       let url = `https://pixabay.com/api/?key=16468181-135e63b9d62443ba3f4dd3c92&q=${this.state.searchedVal}&image_type=${this.state.category}`;
+       let url = `https://pixabay.com/api/?key=16468181-135e63b9d62443ba3f4dd3c92&q=${this.state.searchedVal}&image_type=${this.state.category}&per_page=30`;
         console.log("updated ur:", url);       
         let data = fetch(url).then(response => response.json()).then(data => { this.updatePictureState(data); });
         console.log("data", data);
@@ -87,8 +87,9 @@ handleCathegoryChange(event){
                 </button>
          
             </div>
-            <Carousel/>
-            <DisplayScreen pictures={ this.state.pictures}/>
+            <Carousel />
+            <Pagination  loadingPics={this.state.pictures} pictures={ JSON.parse(localStorage.getItem("pictures"))}/>
+            {/* <DisplayScreen loadingPics={this.state.pictures} pictures={ JSON.parse(localStorage.getItem("pictures"))}/> */}
            
        </div>
    }
